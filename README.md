@@ -1,6 +1,6 @@
 # My Fastfetch Config 🚀
 
-![Platform](https://img.shields.io/badge/platform-Windows-0078D4? logo=windows)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D4?logo=windows)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?logo=powershell)
 ![Fastfetch](https://img.shields.io/badge/Fastfetch-2.0%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
