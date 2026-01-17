@@ -1,16 +1,19 @@
 # My Fastfetch Config 🚀
 
-![Platform](https://img.shields.io/badge/platform-Windows-0078D4?logo=windows)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D4? logo=windows)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?logo=powershell)
 ![Fastfetch](https://img.shields.io/badge/Fastfetch-2.0%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Stars](https://img.shields.io/github/stars/Aynaabaj/fastfetch-windows?style=social)
 
-Custom Fastfetch configuration for Windows with an awesome rocket ASCII art logo! 
+Custom Fastfetch configuration for Windows with an awesome rocket ASCII art logo!
+
+---
 
 ## 📸 Preview
 
 ![Fastfetch Screenshot](screenshot.png)
+
 *Screenshot coming soon!  Run `fastfetch` to see it in action! *
 
 ---
@@ -41,6 +44,7 @@ irm https://raw.githubusercontent.com/Aynaabaj/fastfetch-windows/main/install.ps
 ```
 
 ### What the installer does:
+
 1. ✅ Checks if Fastfetch is installed (installs if needed)
 2. ✅ Creates config directory
 3. ✅ Backs up any existing config
@@ -58,7 +62,7 @@ irm https://raw.githubusercontent.com/Aynaabaj/fastfetch-windows/main/install.ps
 winget install Fastfetch. Fastfetch
 
 # Install Nerd Font (optional but recommended for best experience)
-winget install JetBrains.JetBrainsMono. NerdFont
+winget install JetBrains.JetBrainsMono.NerdFont
 ```
 
 ### Setup Steps
@@ -88,14 +92,14 @@ winget install JetBrains.JetBrainsMono. NerdFont
 
 ```powershell
 # Clone the repository
-git clone https://github.com/Aynaabaj/fastfetch-windows. git
+git clone https://github.com/Aynaabaj/fastfetch-windows.git
 
 # Navigate to the directory
 cd fastfetch-windows
 
 # Copy files to config directory
 Copy-Item config.jsonc ~\.config\fastfetch\
-Copy-Item rocket.txt ~\. config\fastfetch\
+Copy-Item rocket.txt ~\.config\fastfetch\
 
 # Test
 fastfetch
@@ -147,6 +151,7 @@ notepad ~\.config\fastfetch\rocket.txt
 ```
 
 Find ASCII art at: 
+
 - [ASCII Art Archive](https://www.asciiart.eu/)
 - [Text Art Generator](https://patorjk.com/software/taag/)
 - [ASCII Art Generator](https://www.ascii-art-generator.org/)
@@ -160,6 +165,7 @@ notepad ~\.config\fastfetch\config.jsonc
 ```
 
 **Available modules:**
+
 - `os`, `kernel`, `uptime`, `packages`, `shell`
 - `cpu`, `cpuusage`, `gpu`, `memory`, `swap`, `disk`
 - `battery`, `display`, `terminal`, `terminalfont`
@@ -168,13 +174,15 @@ notepad ~\.config\fastfetch\config.jsonc
 - `datetime`, `weather`, `colors`
 
 See all modules: 
+
 ```powershell
 fastfetch --list-modules
 ```
 
 ### Change Colors
 
-Available color options in config: 
+Available color options in config:
+
 - `yellow`, `blue`, `green`, `cyan`, `magenta`, `red`, `white`, `black`
 
 Edit the `"keyColor"` value for each module.
@@ -194,6 +202,7 @@ Replace the rocket with a built-in logo:
 ```
 
 See available logos:
+
 ```powershell
 fastfetch --list-logos
 ```
@@ -205,7 +214,7 @@ fastfetch --list-logos
 ```
 fastfetch-windows/
 ├── README.md          # This file
-├── config.jsonc       # Main Fastfetch configuration
+├── config. jsonc       # Main Fastfetch configuration
 ├── rocket.txt         # ASCII art rocket logo
 └── install.ps1        # One-click installer script
 ```
@@ -217,15 +226,17 @@ fastfetch-windows/
 ### Fastfetch command not found
 
 **Solution:** Install Fastfetch first:
+
 ```powershell
 winget install Fastfetch. Fastfetch
 ```
 
-Then restart your terminal. 
+Then restart your terminal.
 
 ### Logo not appearing
 
 **Solution:** Check that `rocket.txt` exists:
+
 ```powershell
 Test-Path ~\.config\fastfetch\rocket.txt
 ```
@@ -235,6 +246,7 @@ If missing, re-run the installer or download manually.
 ### Icons showing as boxes/squares
 
 **Solution:** Install and set a Nerd Font:
+
 ```powershell
 # Install
 winget install JetBrains.JetBrainsMono.NerdFont
@@ -244,7 +256,8 @@ winget install JetBrains.JetBrainsMono.NerdFont
 
 ### Config not loading
 
-**Solution:** Check config path:
+**Solution:** Check config path: 
+
 ```powershell
 # Should output: C:\Users\YourName\.config\fastfetch\config.jsonc
 ~\.config\fastfetch\config.jsonc
@@ -255,13 +268,14 @@ Test-Path ~\.config\fastfetch\config.jsonc
 
 ### Colors not displaying correctly
 
-**Solution:** Use Windows Terminal instead of legacy console: 
+**Solution:** Use Windows Terminal instead of legacy console:
+
 ```powershell
 # Install Windows Terminal if not installed
 winget install Microsoft.WindowsTerminal
 ```
 
-
+---
 
 ## 💡 Tips & Tricks
 
@@ -291,6 +305,7 @@ fastfetch --format json
 
 ```powershell
 fastfetch --logo none
+```
 
 ---
 
@@ -303,6 +318,33 @@ Contributions are welcome! If you have improvements:
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin feature-name`
 5. Open a Pull Request
+
+---
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+```
+MIT License
+
+Copyright (c) 2026 Aynaabaj
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 ---
 
@@ -337,6 +379,18 @@ Contributions are welcome! If you have improvements:
 - [Fastfetch Official Repo](https://github.com/fastfetch-cli/fastfetch)
 - [Oh My Posh](https://ohmyposh.dev/) - PowerShell prompt customization
 - [Windows Terminal Themes](https://windowsterminalthemes.dev/)
+
+---
+
+## 📈 Changelog
+
+### v1.0.0 (2026-01-26)
+
+- 🎉 Initial release
+- ✨ Custom rocket ASCII logo
+- ✨ Color-coded system information
+- ✨ One-line installer script
+- ✨ Comprehensive documentation
 
 ---
 
