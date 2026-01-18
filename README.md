@@ -14,7 +14,6 @@ Custom Fastfetch configuration for Windows with an awesome rocket ASCII art logo
 
 ![Fastfetch Screenshot](screenshot.png)
 
-*Screenshot coming soon!  Run `fastfetch` to see it in action! *
 
 ---
 
@@ -382,15 +381,6 @@ SOFTWARE.
 
 ---
 
-## 📈 Changelog
-
-### v1.0.0 (2026-01-26)
-
-- 🎉 Initial release
-- ✨ Custom rocket ASCII logo
-- ✨ Color-coded system information
-- ✨ One-line installer script
-- ✨ Comprehensive documentation
 
 ---
 
